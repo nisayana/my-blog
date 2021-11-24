@@ -6,6 +6,7 @@ import About from "./pages/About"
 import ArticlesListPage from "./pages/ArticlesListPage"
 import ArticlePage from "./pages/ArticlePage" 
 import Navbar from "./Navbar"
+import NotFound from "./pages/NotFound"
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
             <Route path="/about" element={<About/>}/>
             <Route path="/articles-list" element={<ArticlesListPage/>}/>
             <Route path="/article/:name" element={<ArticlePage/>}/>
+            <Route element={<NotFound/>}/>
           </Routes>
         </div>
-      </div>
+      </div> 
       </BrowserRouter>
     );
   }
